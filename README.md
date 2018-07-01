@@ -17,3 +17,5 @@ Lets see how to activate zswap on all latest, but not only, deb-based linux dist
 - open '/etc/default/grub' as root for editing
 - change the line 'DEFAULT_GRUB_LINE' into:
   '
+
+-work to be done-
