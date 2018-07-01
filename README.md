@@ -47,29 +47,10 @@ Additionally you can do:
 
 rogiwankenobi@:/etc/systemd/system$ which systemd
 /bin/systemd
-rogiwankenobi@:/etc/systemd/system$ ls -la /bin/systemd
-lrwxrwxrwx 1 root root 20 Jul 28  2016 /bin/systemd -> /lib/systemd/systemd
-rogiwankenobi@:/etc/systemd/system$ ls -la /lib/systemd/systemd
--rwxr-xr-x 1 root root 1010104 Jul 28  2016 /lib/systemd/systemd
-rogiwankenobi@:/etc/systemd/system$ cd /lib/systemd/systemd
-bash: cd: /lib/systemd/systemd: Ist kein Verzeichnis
-rogiwankenobi@:/etc/systemd/system$ cd /lib/systemd
-rogiwankenobi@:/lib/systemd$ ls -la
-insgesamt 5060
-drwxr-xr-x  8 root root    4096 Jun 23 14:11 .
-drwxr-xr-x 18 root root    4096 Jun 26 19:38 ..
--rw-r--r--  1 root root 2085640 Jul 28  2016 libsystemd-shared-230.so
-drwxr-xr-x  2 root root    4096 Jun 23 14:11 network
--rw-r--r--  1 root root     484 Jul 28  2016 resolv.conf
-drwxr-xr-x 29 root root   36864 Jun 23 14:20 system
--rwxr-xr-x  1 root root 1010104 Jul 28  2016 systemd
--rwxr-xr-x  1 root root    6272 Jul 28  2016 systemd-ac-power
--rwxr-xr-x  1 root root   18560 Jul 28  2016 systemd-backlight
-.
 
-to be really sure on this.
-Also you can verify this be googling around for your special distro.
+Also you can verify this be googling around for your special distro, AND , maybe, you can tell from experience since, e.g., a Centos dist is definetely has a systemd-based init system. 
+It is not very cleary to find out, in my eyes.
 
 For Debian you can definately say, since Debian-9 the systemd-init systems is used, while until bebian-8.10, also with a newer kernel from the backports-repo, also systemv-init system can be used; the systemd-system is not completely switched here.
 
-Further hints on How-To for zram integration on systemd-init and systemv-init system you will find added to the scripts.
+Further hints on How-To for zram integration on systemd-init and systemv-init system you will find in my WIKI part.
